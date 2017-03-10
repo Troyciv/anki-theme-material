@@ -1,0 +1,295 @@
+.card {
+ font-family: Noto Sans CJK JP Regular;
+ font-size: 50px;
+ text-align: center;
+ color: black;
+ background: url("./_bg02.jpg");
+}
+ 
+.mobile .card {
+ font-family: Noto Sans CJK JP Regular;
+ font-size: 30px;
+ text-align: center;
+ color: black;
+ background: url("_bg02.jpg");
+ width: 100%;
+ padding: 0px;
+ margin: 0px;
+}
+
+.content {
+    max-width: 95%;
+}
+
+.mobile .content {
+    width: 100%;
+}
+
+.header {
+    
+}
+
+.footer {
+    
+}
+
+/* front background */
+.frontbg {
+ background-color: #18adab;
+ color: #fff;
+ position: relative;
+ /* left: 0; */
+ /* padding: 10px; */
+ border-radius: 10px 10px 10px 10px;
+ /* border: 3px solid #11BAA6; */
+}
+
+.mobile .frontbg {
+    position: relative;
+    left: -10px;
+ /* background-color: #18adab; */
+    border-radius: 0px;
+ /* color: #fff; */
+ /* position: relative; */
+ width: 100%;
+ padding: 15px;
+ /* padding-left: 8px; */
+ /* padding-right: 8px; */
+ margin: 0px;
+ 
+}
+
+.frontbgafter {
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0;
+}
+
+.mobile .frontbgafter{
+    /* border-radius: 8px 8px 0px 0px; */
+}
+
+/* backside background*/
+.backbg {
+ /* position: relative; */
+ /* top: -5px; */
+ background-color: #fff;
+ color: #016ea6;
+ /* text-align: center; */
+ padding: 15px;
+ padding-bottom: 15px;
+ padding-left: 30px;
+ padding-right: 30px;
+ border-radius: 0px 0px 10px 10px;
+ border: 3px solid #11BAA6;
+ border-top: 0;
+}
+ 
+.mobile .backbg {
+    position: relative;
+    left: -10px;
+ /* position: relative; */
+ top: -5px;
+ background-color: #fff;
+ width: 100%;
+ padding: 15px;
+ /* border-radius: 0px 0px 8px 8px; */
+ color: #016ea6;
+ /* text-align: center; */
+ margin: 0px;
+ border: 0px;
+ border-radius: 0px;
+}
+ 
+.image {
+    position: relative;
+    max-height: 400px;
+    max-width: 400px;
+    border: 2px solid black;
+}
+.mobile .image {
+    width: 80%;
+    max-width: 420px;
+    max-height: 400px;
+    border: 2px solid black;
+}
+
+.cloze {
+    font-weight: bold;
+}
+
+.singleword {
+    font-size: 28px;
+}
+.mobile .singleword {
+    font-size: 26px;
+}
+
+.question {
+    font-size: 25px;
+}
+.mobile .question {
+    font-size: 24px;
+}
+
+.sentence {
+    font-size: 25px;
+    font-style: italic;
+}
+.mobile .sentence {
+ font-size: 17px;
+ /* margin-top: -15px; */
+}
+
+.additional {
+ font-family: Raleway;
+ font-style: italic;
+ font-size: 15px;
+ padding-left: 15px;
+ padding-right: 15px;
+ /* margin-left: -5px; */
+ /* margin-top: -15px; */
+ /* color: #18adab; */
+}
+ 
+.mobile .additional {
+ font-family: Raleway;
+ font-style: italic;
+ font-size: 15px;
+ padding: 15px;
+ /* margin-left: -15px; */
+ /* margin-top: -20px; */
+ /* color: #18adab; */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hidden .visible {
+    visibility: visible;
+}
+/* audio play button*/
+.playbtn .replaybutton span svg{
+    border-color: #18adab;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    fill: #18adab;
+    /* outline: 3px solid #18adab; */
+}
+
+.playbtnwhite .replaybutton span svg {
+    fill: #fff;
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+.button {
+	background-color:#18adab;
+  border-radius: 8px 8px 8px 8px;
+	text-indent:0px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#fff;
+	font-size:16px;
+	font-style:normal;
+	height:32px;
+	line-height:32px;
+	width:84px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.buttonwhite {
+    background-color: #fff;
+    color: #016ea6;
+}
+/* horizontal ruler */
+hr {
+ height: 1px;
+ /* font-size: 30px; */
+ border: 0;
+ /* background: #72c8e1; */
+ background: #fff;
+ margin-bottom: 10px;
+ margin-top: 0px;
+ padding: 0px;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+ 
+/* u { */
+/*  text-decoration: none; */
+/*  border-bottom: 1px dotted; */
+/* } */
+
+/* disables anki's image auto-scale behavior */
+/* img { max-width: none; max-height: none; } */
+
+
+/* .spoiler{ */
+/* 	max-width:80%; */
+/* 	margin:auto; */
+/* 	font-size:18px; */
+/* } */
+/* .others { */
+/*  position: relative; */
+/*  top: 15px; */
+/*  border: 1px dotted #72c8e1; */
+/*  color: #18adab; */
+/*  font-size: 20px; */
+/*  width: auto; */
+/*  padding-top: 15px; */
+/*  padding-left: 20px; */
+/*  padding-bottom: 15px; */
+/*  padding-right: 20px; */
+/*  margin-bottom: 35px; */
+/* } */
+ 
+/* .mobile .others { */
+/*  position: relative; */
+/*  top: 10px; */
+/*  border: 1px dotted #72c8e1; */
+/*  color: #18adab; */
+/*  font-size: 17px; */
+/*  width: auto; */
+/*  padding-top: 8px; */
+/*  padding-left: 15px; */
+/*  padding-bottom: 8px; */
+/*  padding-right: 15px; */
+/*  margin-bottom: 20px; */
+/* } */
+/* .hira { */
+/*  font-size: 25px; */
+/*  line-height: 5px; */
+/*  padding-bottom: 40px; */
+/* } */
+ 
+/* .mobile .hira { */
+/*  font-size: 18px; */
+/*  line-height: 5px; */
+/*  padding-bottom: 25px; */
+/* } */
+ 
+ 
+/* ruby rt { */
+/*  visibility: hidden; */
+/* } */
+ 
+/* ruby:hover rt { */
+/*  visibility: visible; */
+/* }
+
+.alts {
+ font-size: 14px;
+}
+
+.attrs {
+ font-style: italic;
+ font-size: 14px;
+}
+*/
+ 
+/* /\* This line is Added by Cloze Furigana Tools to make its various features work. CFT.260.00*\/.hidden {visibility: hidden; font-size: 0;} .hidden .cloze, .cloze .hidden {visibility: visible; background-color: white;font-size: 0.8rem;} @-moz-document url-prefix() {ruby {position: relative;display: inline-block;} ruby rt {position: absolute;display: block;font-size: 0.5em;left: -50%;bottom: 115%;width: 210%;padding: 0;text-align: center;line-height:1em}} .hidden .basemaru {position:relative;} .hidden .basemaru:after {content: "◯"; visibility: visible; position:absolute; left:0;} .hidden .cloze .basemaru:after, .cloze .hidden .basemaru:after {visibility: hidden;} div{line-height: 2em;} .cloze_container .hidden {visibility: visible; background-color: white;} */
