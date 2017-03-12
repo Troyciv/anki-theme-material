@@ -1,0 +1,286 @@
+* Anki cards
+
+** all purpose card
+**** front
+<div class="content">
+	<div class="frontbg">
+		<div class="question">
+			{{Front (Example with word blanked out or missing)}}<br>
+			{{#Front (Picture)}}
+				{{Front (Picture)}}
+			{{/Front (Picture)}}
+		</div>
+
+		<div class="additional">
+			{{Front (Definitions, base word, etc.)}}
+		</div>
+	</div>
+</div>
+**** back
+<!-- FRONTSIDE -->
+<div class="content">
+<div class="frontbg frontbgafter">
+	<div class="question">
+	{{Front (Example with word blanked out or missing)}}<br>
+	{{#Front (Picture)}}
+	{{Front (Picture)}}
+	{{/Front (Picture)}}
+	</div>
+
+	<div class="additional">
+	{{Front (Definitions, base word, etc.)}}
+	</div>
+</div>
+
+
+<!-- BACKSIDE -->
+<div class="backbg" id='answer'>
+<div class="singleword">
+	{{Back (a single word/phrase, no context)}}</div>
+<div class="sentence">
+	{{- The full sentence (no words blanked out)}}</div>
+<div class="additional">
+	{{- Extra Info (Pronunciation, personal connections, conjugations, etc)}}</div>
+</div>
+
+</div>
+** Cloze deletion
+**** front
+<div class="content">
+	<div class=frontbg>
+		<div class="sentence">{{cloze:Text}}</div>
+	</div>
+</div>
+**** back
+<div class="content">
+	<div class="backbg">
+		<div class="sentence">{{cloze:Text}}</div>
+		<div class="playbtn">{{audio}}</div>
+		<div class="additional">{{Extra}}</div>
+	</div>
+</div>
+** Memrise
+**** front
+<div class="frontbg">
+<div class="question">	
+	{{English}}
+	<div class="additional">
+		{{#English Alternatives}}
+			<br /><span class="visible">{{English Alternatives}}</span>
+		{{/English Alternatives}}
+	</div>
+</div>
+</div>
+**** back
+<!-- FRONT -->
+<div class="frontbg frontbgafter">
+<div class="question">	
+	{{English}}
+	<div class="additional">
+		{{#English Alternatives}}
+			<br><span class="visible">{{English Alternatives}}</span>
+		{{/English Alternatives}}
+<!--		{{#Literal translation}}
+			<br><span class="visible">{{Literal translation}}</span>
+		{{/Literal translation}}
+		{{#Literal translation Alternatives}}
+			<br></span class="visible">{{Literal translation Alternatives}}</span>
+		{{/Literal translation Alternatives}}
+-->
+	</div>
+</div>
+</div>
+
+<!-- BACK -->
+<div class=backbg id='answer'>
+<div class="question">
+	{{Portuguese (BR)}}
+<div>
+	{{#Audio}}<div class="playbtn">{{Audio}}</div>{{/Audio}}
+<div class="additional">	
+	{{#Portuguese (BR) Alternatives}}
+		<br>{{Portuguese (BR) Alternatives}}
+	{{/Portuguese (BR) Alternatives}}
+	{{#English -> Portuguese (BR) Mem}}
+		<br>{{English -> Portuguese (BR) Mem}}
+	{{/English -> Portuguese (BR) Mem}}
+</div>
+</div>
+** picture cards
+**** front
+<div class="content">
+	<div class=frontbg>
+		{{Picture}}
+	</div>
+</div>
+**** back
+</div class="content">
+	<!-- FRONTSIDE -->
+		<div class="frontbg frontbgafter">{{Picture}}</div>	
+
+	<!-- BACKSIDE -->
+		<div class=backbg id='answer'>
+			<div class="question">
+				{{Word}}
+			{{#Pronunciation (Recording and/or IPA)}}
+			<br><div class="playbtn">{{Pronunciation (Recording and/or IPA)}}</div>
+			{{/Pronunciation (Recording and/or IPA)}}
+
+			{{#Gender, Personal Connection, Extra Info (Back side)}}
+			<div class="additional">{{Gender, Personal Connection, Extra Info (Back side)}}</div>
+			{{/Gender, Personal Connection, Extra Info (Back side)}}
+		</div>
+</div>
+** simple front and back
+**** front
+<div class="content">
+	<div class="frontbg">
+		<div class="question">{{Vorderseite}}</div>
+	</div>
+</div>
+**** back
+<!-- FRONTSIDE -->
+<div class="content">
+	<div class="frontbg frontbgafter">
+		<div class="question">{{Vorderseite}}</div>
+	</div>
+
+
+<!-- BACKSIDE -->
+	<div class="backbg" id='answer'>
+		<div class="question">{{Rückseite}}</div>
+		<div class="playbtn">{{audio}}</div>
+	</div>
+</div>
+** SubtitleMemorize
+**** front
+<div class="frontbg">
+<!-- <span class='media'>{{Video}}</span> -->
+<!-- <div class='sequence_marker'>{{SequenceMarker}}</div> -->
+{{#Snapshot}}<div class='media'>{{Snapshot}}</div>{{/Snapshot}}
+<!-- <div class="additional">before: {{hint:ContextTargetPreceding}}</div>-->
+<div class="playbtnwhite">{{Audio}}</div>
+<!--<div class="additional">after: {{hint:ContextTargetFollowing}}</div>-->
+</div>
+**** back
+<!-- FRONTSIDE -->
+<div class="frontbg frontbgafter">
+<!-- <span class='media'>{{Video}}</span> -->
+<!-- <div class='sequence_marker'>{{SequenceMarker}}</div> -->
+{{#Snapshot}}<div class='media'>{{Snapshot}}</div>{{/Snapshot}}
+<!--<div class="additional">context: {{hint:ContextTargetPreceding}}</div>-->
+<div class="playbtn playbtnwhite">{{Audio}}</div>
+<!--<div class="additional">after:{{hint:ContextTargetFollowing}}</div>-->
+
+</div>
+<!-- BACKSIDE -->
+<div class="backbg" id='answer'>
+<!-- <span class='media'>{{Audio}}</span> -->
+<!-- {{#Reading}}<div class='reading'>{{Reading}}</div><br>{{/Reading}} -->
+
+<!-- <div class='context'>{{ContextTargetPreceding}}<br><br></div> -->
+<div class='question'>{{morphHighlight:Expression}}</div>
+<!-- <div class='context'><br>{{ContextTargetFollowing}}</div> -->
+
+<!-- {{#ContextNativePreceding}}<div class='context'>{{ContextNativePreceding}}<br><br></div>{{/ContextNativePreceding}}
+<div class='meaning'>{{Meaning}}</div>
+{{#ContextNativeFollowing}}<div class='context'><br>{{ContextNativeFollowing}}</div>{{/ContextNativeFollowing}}
+-->
+
+{{#Notes}}<br/><div class='additional'>{{furigana:Notes}}</div>{{/Notes}}
+
+</div>
+** verbs
+**** front
+<div class="frontbg">
+<span class="additional">conjugation</span>
+<hr>
+{{#presente_eu}}
+<div class="singleword">{{infinitiv}}</div>
+<div class="question">eu</div>
+<div class="additional">presente</div>
+{{/presente_eu}}
+
+{{#help}}
+<button class="button buttonwhite" type="button"  onclick="
+	if
+		(document.getElementById('helpspoiler') .style.display=='none')
+		{document.getElementById('helpspoiler') .style.display=''}
+	else
+		{document.getElementById('helpspoiler') .style.display='none'}">
+help
+</button>
+<div class="additional" id="helpspoiler" style="display:none">
+{{help}}
+</div>
+
+
+{{/help}}
+
+
+</div>
+**** back
+<!-- FRONTSIDE -->
+<div class="frontbg frontbgafter">
+{{#presente_eu}}
+   <div class="singleword">{{infinitiv}}</div>
+<div class="question">eu</div>
+<div class="additional">presente</div>
+{{/presente_eu}}
+
+{{#help}}
+<button class="button buttonwhite" type="button"  onclick="
+	if
+		(document.getElementById('helpspoiler') .style.display=='none')
+		{document.getElementById('helpspoiler') .style.display=''}
+	else
+		{document.getElementById('helpspoiler') .style.display='none'}">
+help
+</button>
+
+<div class="additional" id="helpspoiler" style="display:none"> 
+{{help}}
+</div> 
+
+{{/help}}
+
+
+</div>
+
+<!-- BACKSIDE -->
+
+<div class="backbg" id='answer'>
+<div class="question">eu<span class="singleword"> {{presente_eu}}</span></div>
+
+<button class="button"  type="button"  onclick="if(document.getElementById('fullcon') .style.display=='none') {document.getElementById('fullcon') .style.display=''}else{document.getElementById('fullcon') .style.display='none'}">
+	full table
+</button>
+
+<div class="additional" id="fullcon" style="display:none;"> 
+presente
+<table class="table" id="t01">
+	<tr>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td>eu</td>
+		<td>{{presente_eu}}</td>
+	</tr>
+	<tr>
+		<td>você <br>ele / ela</td>
+		<td>{{presente_voce}}</td>
+	</tr>
+	<tr>
+		<td>nós</td> 
+		<td>{{presente_nos}}</td>
+	</tr>
+	<tr>
+		<td>vocês<br>eles / elas</td>
+ 		<td>{{presente_voces}}</td>
+	</tr>
+</table>
+
+</div>
+
+
