@@ -1,27 +1,36 @@
 .card {
- font-family: Noto Sans CJK JP Regular;
- font-size: 50px;
- text-align: center;
- color: black;
- background: url("./_bg02.jpg");
+    font-family: Noto Sans CJK JP Regular;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    background: url("./_bg02.jpg");
 }
  
 .mobile .card {
- font-family: Noto Sans CJK JP Regular;
- font-size: 30px;
- text-align: center;
- color: black;
- background: url("_bg02.jpg");
- width: 100%;
- padding: 0px;
- margin: 0px;
+    /* -webkit-box-align: stretch; */
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-box-pack: center; */
+    /* background: url("_bg02.jpg"); */
+    /* color: black; */
+    /* display: -webkit-box; */
+    /* font-family: Noto Sans CJK JP Regular; */
+    font-size: 30px;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
 }
 
+.mobile #content {margin:0;}
+
 .content {
-    max-width: 95%;
 }
 
 .mobile .content {
+    max-width: 100%;
     width: 100%;
 }
 
@@ -35,27 +44,25 @@
 
 /* front background */
 .frontbg {
- background-color: #18adab;
- color: #fff;
- position: relative;
- /* left: 0; */
- /* padding: 10px; */
- border-radius: 10px 10px 10px 10px;
- /* border: 3px solid #11BAA6; */
+    background-color: #18adab;
+    color: #fff;
+    position: relative;
+    /* padding: 10px; */
+    border-radius: 10px 10px 10px 10px;
+    /* border: 3px solid #11BAA6; */
 }
 
 .mobile .frontbg {
     position: relative;
-    left: -10px;
+    left: 0px;
  /* background-color: #18adab; */
     border-radius: 0px;
  /* color: #fff; */
  /* position: relative; */
- width: 100%;
- padding: 15px;
- /* padding-left: 8px; */
- /* padding-right: 8px; */
- margin: 0px;
+    width: 100%;
+    padding: 15px;
+    /* padding-left: 8px; */
+    /* padding-right: 8px; */
  
 }
 
@@ -70,34 +77,32 @@
 
 /* backside background*/
 .backbg {
- /* position: relative; */
- /* top: -5px; */
- background-color: #fff;
- color: #016ea6;
- /* text-align: center; */
- padding: 15px;
- padding-bottom: 15px;
- padding-left: 30px;
- padding-right: 30px;
- border-radius: 0px 0px 10px 10px;
- border: 3px solid #11BAA6;
- border-top: 0;
+    /* position: relative; */
+    /* top: -5px; */
+    background-color: #fff;
+    color: #016ea6;
+    /* text-align: center; */
+    padding: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0px 0px 10px 10px;
+    border: 3px solid #11BAA6;
+    border-top: 0;
 }
  
 .mobile .backbg {
     position: relative;
-    left: -10px;
- /* position: relative; */
- top: -5px;
- background-color: #fff;
- width: 100%;
- padding: 15px;
- /* border-radius: 0px 0px 8px 8px; */
- color: #016ea6;
- /* text-align: center; */
- margin: 0px;
- border: 0px;
- border-radius: 0px;
+    top: -5px;
+    /* border-radius: 0px 0px 8px 8px; */
+    /* text-align: center; */
+    background-color: #fff;
+    border-radius: 0px;
+    border: 0px;
+    color: #016ea6;
+    margin: 0px;
+    padding: 15px;
+    width: 100%;
 }
  
 .image {
@@ -136,29 +141,29 @@
     font-style: italic;
 }
 .mobile .sentence {
- font-size: 17px;
- /* margin-top: -15px; */
+    font-size: 17px;
+    /* margin-top: -15px; */
 }
 
 .additional {
- font-family: Raleway;
- font-style: italic;
- font-size: 15px;
- padding-left: 15px;
- padding-right: 15px;
- /* margin-left: -5px; */
- /* margin-top: -15px; */
- /* color: #18adab; */
+    font-family: Raleway;
+    font-style: italic;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin-left: -5px; */
+    /* margin-top: -15px; */
+    /* color: #18adab; */
 }
  
 .mobile .additional {
- font-family: Raleway;
- font-style: italic;
- font-size: 15px;
- padding: 15px;
- /* margin-left: -15px; */
- /* margin-top: -20px; */
- /* color: #18adab; */
+    font-family: Raleway;
+    font-style: italic;
+    font-size: 15px;
+    padding: 15px;
+    /* margin-left: -15px; */
+    /* margin-top: -20px; */
+    /* color: #18adab; */
 }
 
 .hidden {
@@ -187,19 +192,19 @@
 }
 
 .button {
-	background-color:#18adab;
-  border-radius: 8px 8px 8px 8px;
-	text-indent:0px;
-	border:1px solid #84bbf3;
-	display:inline-block;
-	color:#fff;
-	font-size:16px;
-	font-style:normal;
-	height:32px;
-	line-height:32px;
-	width:84px;
-	text-decoration:none;
-	text-align:center;
+	   background-color:#18adab;
+     border-radius: 8px 8px 8px 8px;
+	   text-indent:0px;
+	   border:1px solid #84bbf3;
+	   display:inline-block;
+	   color:#fff;
+	   font-size:16px;
+	   font-style:normal;
+	   height:32px;
+	   line-height:32px;
+	   width:84px;
+	   text-decoration:none;
+	   text-align:center;
 }
 
 .buttonwhite {
@@ -208,16 +213,16 @@
 }
 /* horizontal ruler */
 hr {
- height: 1px;
- /* font-size: 30px; */
- border: 0;
- /* background: #72c8e1; */
- background: #fff;
- margin-bottom: 10px;
- margin-top: 0px;
- padding: 0px;
- padding-left: 10px;
- padding-right: 10px;
+    height: 1px;
+    /* font-size: 30px; */
+    border: 0;
+    /* background: #72c8e1; */
+    background: #fff;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
  
 /* u { */
