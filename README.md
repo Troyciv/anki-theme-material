@@ -1,4 +1,7 @@
 # anki-css
-My personal anki style
+An Anki card style template, following (some) material design guidelines and using the same color scheme as Ankidroid.
 
-Inspired by [/u/TrainOfPotatoes](https://www.reddit.com/user/TrainOfPotatoes) as found in [this thread](https://www.reddit.com/r/Anki/comments/4n6cbf/does_anyone_have_a_goodlooking_anki_css_template/)
+LICENSE: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+
+
+
